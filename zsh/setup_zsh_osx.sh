@@ -13,5 +13,6 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 # Copy config file
 cp ../zshrc $HOME/.zshrc
 
+exec zsh
 # Customize
 source $HOME/.zshrc

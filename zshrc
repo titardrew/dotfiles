@@ -33,6 +33,7 @@ source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 source $ZSH/plugins/gitfast/gitfast.plugin.zsh
 source $ZSH/plugins/compleat/compleat.plugin.zsh
 source $ZSH/custom/themes/powerlevel9k/powerlevel9k.zsh-theme
+source $ZSH/plugins/web-search/web-search.plugin.zsh
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -91,10 +92,10 @@ export LANG=en_US.UTF-8
 # We need this so that tmux uses zsh when started in a zsh shell
 export SHELL='/bin/zsh'
 
-source $RES/functions.sh
-source $RES/aliases.sh
-source $RES/exports.sh
-source $RES/path.sh
+source $RES/zsh/functions.sh
+source $RES/zsh/aliases.sh
+source $RES/zsh/exports.sh
+source $RES/zsh/path.sh
 
 # Save all history
 # Incrementally write history to file
