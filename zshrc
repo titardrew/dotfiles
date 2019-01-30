@@ -32,7 +32,6 @@ source $ZSH/lib/misc.zsh
 source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 source $ZSH/plugins/gitfast/gitfast.plugin.zsh
 source $ZSH/plugins/compleat/compleat.plugin.zsh
-source $ZSH/custom/themes/powerlevel9k/powerlevel9k.zsh-theme
 source $ZSH/plugins/web-search/web-search.plugin.zsh
 
 # Example aliases
@@ -76,7 +75,7 @@ source $ZSH/plugins/web-search/web-search.plugin.zsh
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git tmuxinator zsh-autosuggestions web-search)
+plugins=(git tmuxinator ssh-agent vi-mode pip python)
 
 DISABLE_CORRECTION="true"
 
@@ -96,6 +95,7 @@ source $RES/zsh/functions.sh
 source $RES/zsh/aliases.sh
 source $RES/zsh/exports.sh
 source $RES/zsh/path.sh
+source $RES/zsh/agnoster-zsh-theme/agnoster.zsh-theme
 
 # Save all history
 # Incrementally write history to file
@@ -120,8 +120,8 @@ bindkey -M vicmd '?' history-incremental-search-backward
 bindkey -M vicmd '/' history-incremental-search-forward
 
 # Beginning search with arrow keys
-bindkey "^[OA" up-line-or-beginning-search
-bindkey "^[OB" down-line-or-beginning-search
+bindkey "^R" up-line-or-beginning-search
+bindkey "^B" down-line-or-beginning-search
 bindkey -M vicmd "k" up-line-or-beginning-search
 bindkey -M vicmd "j" down-line-or-beginning-search
 
