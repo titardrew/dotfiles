@@ -6,3 +6,7 @@ source ../vim/setup_vim_linux.sh
 
 # Install zsh
 source ../zsh/setup_zsh_linux.sh
+
+# Install virtualenvwrapper
+pip3 install virtualenv
+pip3 install virtualenvwrapper

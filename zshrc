@@ -75,7 +75,7 @@ source $ZSH/plugins/web-search/web-search.plugin.zsh
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git tmuxinator ssh-agent vi-mode pip python)
+plugins=(git tmuxinator ssh-agent vi-mode pip python wd)
 
 DISABLE_CORRECTION="true"
 
@@ -91,11 +91,16 @@ export LANG=en_US.UTF-8
 # We need this so that tmux uses zsh when started in a zsh shell
 export SHELL='/bin/zsh'
 
-source $RES/zsh/functions.sh
 source $RES/zsh/aliases.sh
 source $RES/zsh/exports.sh
 source $RES/zsh/path.sh
+
+# VirtualEnvWrapper
+source /usr/local/bin/virtualenvwrapper.sh
+
+source $RES/zsh/functions.sh
 source $RES/zsh/agnoster-zsh-theme/agnoster.zsh-theme
+
 
 # Save all history
 # Incrementally write history to file

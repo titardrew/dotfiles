@@ -9,3 +9,7 @@ source ../zsh/setup_zsh_osx.sh
 
 # Install fonts
 source ../fonts/setup_font_osx.sh
+
+# Install virtualenvwrapper
+pip3 install virtualenv
+pip3 install virtualenvwrapper
